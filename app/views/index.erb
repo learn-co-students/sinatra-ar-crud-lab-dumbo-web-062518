@@ -1,0 +1,9 @@
+<h1> Look! A New Page!</h1>
+
+<a href="/posts/new">Make a post</a>
+
+<h2>look, my posts</h2>
+<%Post.all.each do |post|%>
+<h3><%=post.name%></h3>
+<p><%=post.content%></p>
+<%end%>
